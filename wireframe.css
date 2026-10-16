@@ -478,3 +478,20 @@ textarea{min-height:132px}
   .footer{padding-top:52px}
   .footer-grid{gap:36px}
 }
+
+/* Sitemap V2.0 modules */
+.partner-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.partner-card{display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);background:#fff}
+.partner-card .placeholder.small{min-height:180px;border:0;border-bottom:1px solid var(--line)}
+.partner-card>div:last-child{padding:24px}
+.partner-card h3{margin-bottom:0;font-size:24px}
+.partner-card .tag{margin-bottom:12px}
+#leadership-preview .placeholder.portrait{min-height:420px}
+.footer-language{margin-left:auto}
+@media(max-width:920px){.partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){
+  .partner-grid{grid-template-columns:1fr}
+  .partner-card .placeholder.small{min-height:190px}
+  #leadership-preview .placeholder.portrait{min-height:300px}
+  .footer-language{margin-left:0;flex-wrap:wrap}
+}

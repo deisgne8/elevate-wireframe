@@ -9,11 +9,11 @@ The sitemap.html directory remains a separate review file with no public navigat
 Keep wireframe.css and wireframe.js beside the HTML files.
 
 BASIS
-The supplied ELEVATE sitemap and the eight-page completed website questionnaire.
+The supplied ELEVATE Website Sitemap V2.0 and the eight-page completed website questionnaire.
 Document content was used as project reference material. No external reference
 sites were copied. All images and films are grayscale placeholders.
 
-PAGES (20 total)
+PAGES (19 total)
 01 index.html                 Home
 02 our-story.html             About ELEVATE / Our Story
 03 vision-approach.html        Vision & Approach
@@ -33,24 +33,23 @@ PAGES (20 total)
 17 cookies.html               Cookie preferences
 18 404.html                   Page-not-found state
 19 sitemap.html               Linked review directory
-20 about.html                 About ELEVATE overview with tabs
 
 SITEMAP COVERAGE
 Home: brand film, brand positioning, discover ELEVATE, all five pillars,
-featured Mondrian project, all developments CTA, design/hospitality/wellbeing,
+short leadership profile, featured Mondrian project, partner profiles,
 latest stories and enquiry/callback pathway.
 
-Our Story: who we are, differentiation, One Group relationship placeholder,
-purpose/long-term ambition, approach preview and leadership preview.
+Our Story: who we are, differentiation, One Group relationship placeholder and
+development approach preview.
 Vision: purpose, development approach, architecture, wellbeing/connection,
 hospitality and philosophy CTA.
-Leadership: introduction, CEO and leadership profiles, experience/expertise.
+Leadership: introduction, CEO and leadership profiles.
 Philosophy: editorial introduction, Health, Wellness, Tribe, Purpose and Flow,
 development application and portfolio CTA.
 
-Developments: introduction, current project, future portfolio sample,
-status/location information.
-Mondrian: project film, overview/key facts, ELEVATE/Ennismore/Mondrian story,
+Developments: introduction and current development with status/location
+information.
+Mondrian: project film, overview/key facts, partner and collaboration profiles,
 architecture/interiors, residence/layout selection, floor-plan download state,
 availability CTA, wellbeing/recreation, hospitality, community, location,
 map/destinations, gallery, brochure state, buyer/investor enquiry, callback,
