@@ -15,18 +15,18 @@ sites were copied. All images and films are grayscale placeholders.
 
 PAGES (19 total)
 01 index.html                 Home
-02 our-story.html             About ELEVATE / Our Story
+02 our-story.html             Our Story
 03 vision-approach.html        Vision & Approach
-04 leadership.html            Leadership
-05 philosophy.html            Philosophy of Living overview (five immersive sections on one page)
-06 developments.html          Developments Overview
+04 leadership.html            Our Founder / Zeeshaan Shah
+05 philosophy.html            Philosophy and LIVE ELEVATED
+06 developments.html          Collection
 07 mondrian.html              Mondrian Al Marjan Island Beach Residences
-08 future-development.html    Reusable future-development page
-09 news.html                  News & Media Overview
+08 future-development.html    Internal reusable project template (not publicly linked)
+09 news.html                  News feed
 10 article.html               Project article detail
 11 announcement.html          Company announcement detail
 12 lifestyle-story.html       Brand & lifestyle article detail
-13 press-coverage.html        Press coverage detail
+13 press-coverage.html        Internal external-coverage template
 14 contact.html               Contact & Enquiries
 15 privacy.html               Privacy Policy draft structure
 16 terms.html                 Terms of Use draft structure
@@ -35,50 +35,51 @@ PAGES (19 total)
 19 sitemap.html               Linked review directory
 
 SITEMAP COVERAGE
-Home: brand film, brand positioning, discover ELEVATE, all five pillars,
-short leadership profile, featured Mondrian project, partner profiles,
-latest stories and enquiry/callback pathway.
+Home: opening statement and cinematic visual, ELEVATE introduction, featured
+Mondrian project, five-pillar philosophy, Zeeshaan Shah founder profile,
+partners and collaborators, latest news and contact pathway.
 
-Our Story: who we are, differentiation, One Group relationship placeholder and
-development approach preview.
+Our Story: company introduction and background, Vision & Approach and Our
+Founder. Vision & Approach now sits within the Our Story hierarchy.
 Vision: purpose, development approach, architecture, wellbeing/connection,
 hospitality and philosophy CTA.
-Leadership: introduction, CEO and leadership profiles.
-Philosophy: editorial introduction, Health, Wellness, Tribe, Purpose and Flow,
-development application and portfolio CTA.
+Our Founder: Zeeshaan Shah profile and founder message only.
+Philosophy: one opening statement, visible anchor navigation, five concise and
+visually led pillar sections, Mondrian examples, LIVE ELEVATED program and a
+Collection introduction.
 
-Developments: introduction and current development with status/location
-information.
+Collection: one prominent, full-width Mondrian feature with no empty, future or
+coming-soon cards.
 Mondrian: project film, overview/key facts, partner and collaboration profiles,
 architecture/interiors, residence/layout selection, floor-plan download state,
 availability CTA, wellbeing/recreation, hospitality, community, location,
-map/destinations, gallery, brochure state, buyer/investor enquiry, callback,
+map/destinations, gallery, films, construction updates, brochure state,
+buyer/investor enquiry, callback,
 consultation, WhatsApp state and broker enquiry.
-Future development: all corresponding reusable modules and enquiry pathways.
+Future project: reusable source template retained without a public link.
 
-News: all four categories and working filters, editorial detail pages with
-title/date/category, content/image/video placeholders, related project and
-related stories. Press: publication/date, summary, attribution and outbound
-link placeholder. Consent-based newsletter and media enquiry.
+News: one newest-first feed for releases, coverage, project updates, launches,
+founder perspectives and LIVE ELEVATED stories. Every item includes an image,
+title and publication-date field. Filters, section navigation, separate press
+coverage and the page-level newsletter have been removed. The footer retains
+the newsletter and the page retains a discreet media enquiry link.
 
 Contact: office/map placeholder, WhatsApp state, all five enquiry types,
 project selection, personal details, preferred contact channel, callback/
 appointment preference, message, consent and confirmation/next steps.
 Shared footer: primary links, project brochure, newsletter, social placeholders,
-privacy, terms, cookies, 404 preview and language control.
+privacy, terms and cookies. Arabic controls are removed.
 
 INTERACTIONS
 Forms validate required fields and show prototype confirmation.
 Broker/media links preselect the correct enquiry type.
 Callback/consultation controls select the corresponding request.
-News categories filter stories.
 Gallery previous/next controls cycle four image placeholders.
 Residence selector changes the sample floor-plan label and copy.
-Leadership, download, WhatsApp, social and source controls show clear states.
+Download, WhatsApp, social and source controls show clear states.
 Cookie choices persist locally when browser storage is permitted.
-Mobile navigation expands and collapses.
-English/Arabic control previews Arabic navigation and RTL layout only.
-Full Arabic page translation is not included.
+The same editorial menu expands and collapses on desktop and mobile, while
+Contact Us remains visible in the header.
 
 CONTENT & INTEGRATIONS
 Project-specific facts from the questionnaire are used where supplied.
@@ -96,27 +97,25 @@ IMPLEMENTATION
 Every HTML file includes full static markup and can be read without JavaScript.
 Shared CSS provides responsive, grayscale styling.
 Shared JavaScript provides prototype interactions.
-About ELEVATE and Developments have separate mega menus. Philosophy of Living has a direct menu link. About overview tabs appear directly below the banner. About subpages retain dedicated URLs; the five philosophy pillars share one page.
+The header uses a compact editorial menu for Our Story, Philosophy, Collection
+and News. Contact Us remains visible outside the menu. Our Story subpages retain
+dedicated URLs; the five philosophy pillars share one page with visible anchors.
 
 The 404 page is a linked preview; an HTTP host would need its own 404 routing.
 
 VERIFICATION
-All 20 pages rendered at 1440px and 390px widths.
+All 19 HTML files rendered at 1440px and 390px widths.
 Every internal page link and fragment target checked.
 No duplicate IDs, horizontal overflow or JavaScript errors found.
 Main interactive journeys checked in Chrome.
 Desktop screenshot overview and mobile home layout visually reviewed.
 
 
-Navigation refinement: removed all page-directory shortcuts from header/footer.
-Home pillar cards link to sections on philosophy.html. The main menu links directly to the complete Philosophy page.
-The footer includes a 404 / Page not found link as requested.
-
-Footer coverage: Home and primary navigation; project brochure shortcut; consent-based newsletter; social channel placeholders; Privacy Policy; Terms of Use; Cookie Preferences; 404 link; English/Arabic controls synchronized with the header. Arabic remains a navigation and RTL preview.
-
-News & Media refinement: section navigation, featured announcement, four full category filters, press coverage preview with publication/date and attribution, coverage/source controls, consent-based newsletter and media enquiry. Article detail pages include separate photography and video placeholders, related development links and related stories excluding the current story.
-
-Confirmed sitemap correction: Philosophy of Living is ONE page with Health, Wellness, Tribe, Purpose and Flow sections. Separate pillar pages have been removed. All pillar links use philosophy.html#section anchors.
+Current client revision: the public hierarchy is Our Story, Philosophy,
+Collection, News and Contact Us. Navigation, breadcrumbs, footer references and
+homepage order reflect that hierarchy. Copy has been developed for wireframe
+review; project facts, dates, biographies and launch copy still require final
+client approval before production.
 
 Developments audit: listing includes portfolio introduction, current development and location/status on the project card. Upcoming launches are conditional; the future template is a clearly marked preview. Mondrian includes all supplied project sections, project-film controls, destination lifestyle, photography and films, brochure/floor-plan controls, and project-specific buyer/investor, availability, callback, consultation, WhatsApp and broker enquiry journeys. Availability carries the selected sample residence into the form. Asset downloads and films remain prototype states until approved files are supplied.
 
