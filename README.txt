@@ -64,7 +64,8 @@ coverage and the page-level newsletter have been removed. The footer retains
 the newsletter and the page retains a discreet media enquiry link.
 
 Contact: name, email, phone, optional interest, contextual detail and message
-fields, plus distinct buyer and broker pathways, callback and WhatsApp states.
+fields, plus a careers-only CV upload, distinct buyer and broker pathways,
+callback and WhatsApp states.
 Shared footer: concise Projects, Explore, Contact Us and News groups, contact
 details, social placeholders, newsletter and discreet legal links.
 

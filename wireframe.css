@@ -667,6 +667,9 @@ blockquote{margin:36px 0 0;padding:26px 0;border-block:1px solid var(--line);fon
 .news-feed .news-card h3{font-size:clamp(23px,2.2vw,31px)}
 
 .compact-form{grid-template-columns:1fr 1fr}
+.field-help{margin:8px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
+.resume-field input[type=file]{height:auto;min-height:48px;padding:11px;background:#fafafa}
+.resume-field input[type=file]::file-selector-button{margin-right:14px;padding:8px 12px;border:1px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer}
 .enquiry-paths{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line)}
 .enquiry-paths a{display:flex;flex-direction:column;gap:15px;padding:32px;text-decoration:none}
 .enquiry-paths a:first-child{border-right:1px solid var(--line)}

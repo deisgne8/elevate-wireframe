@@ -80,7 +80,7 @@ Status: `Placeholder` · `Draft` · `Client review` · `Approved`
 |---|---|---|---|---|
 | Introduction | Concise invitation to contact ELEVATE | — | Optional brand image | Draft |
 | Details | Confirmed email, phone, office address and social handles | WhatsApp | — | Placeholder |
-| Form | Name, email, phone, optional interest, contextual detail, message and consent | Submit enquiry | — | Draft |
+| Form | Name, email, phone, optional interest, contextual detail, careers-only CV upload, message and consent | Submit enquiry | — | Draft |
 | Enquiry paths | Distinct buyer and broker messages | Buyer enquiries; Broker enquiries | — | Draft |
 | Zoho | Confirm endpoint, fields, lead owners, assignment rules, notifications, duplicate handling and consent retention | — | — | Required |
 
