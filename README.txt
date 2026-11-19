@@ -9,9 +9,9 @@ The sitemap.html directory remains a separate review file with no public navigat
 Keep wireframe.css and wireframe.js beside the HTML files.
 
 BASIS
-The supplied ELEVATE Website Sitemap V2.0 and the eight-page completed website questionnaire.
-Document content was used as project reference material. No external reference
-sites were copied. All images and films are grayscale placeholders.
+The supplied ELEVATE Website Sitemap V2.0, client feedback and completed website
+questionnaire. The Mondrian project structure and verified facts follow the
+existing official project page. All images and films remain grayscale placeholders.
 
 PAGES (19 total)
 01 index.html                 Home
@@ -37,25 +37,24 @@ PAGES (19 total)
 SITEMAP COVERAGE
 Home: opening statement and cinematic visual, ELEVATE introduction, featured
 Mondrian project, five-pillar philosophy, Zeeshaan Shah founder profile,
-partners and collaborators, latest news and contact pathway.
+partners and collaborators, expressive closing statement, callback and brand
+sign-off. News has been removed from the homepage.
 
-Our Story: company introduction and background, Vision & Approach and Our
-Founder. Vision & Approach now sits within the Our Story hierarchy.
-Vision: purpose, development approach, architecture, wellbeing/connection,
-hospitality and philosophy CTA.
-Our Founder: Zeeshaan Shah profile and founder message only.
+Our Story: one continuous page with opening visual, company introduction,
+company-pillar placeholders, Vision & Approach, Zeeshaan Shah founder profile,
+closing visual and callback. The older standalone URLs remain only as internal
+source templates and are not part of public navigation.
 Philosophy: one opening statement, visible anchor navigation, five concise and
-visually led pillar sections, Mondrian examples, LIVE ELEVATED program and a
-Collection introduction.
+visually led pillar sections and the LIVE ELEVATED program. Philosophy in
+Practice and the Collection introduction have been removed.
 
 Collection: one prominent, full-width Mondrian feature with no empty, future or
 coming-soon cards.
-Mondrian: project film, overview/key facts, partner and collaboration profiles,
-architecture/interiors, residence/layout selection, floor-plan download state,
-availability CTA, wellbeing/recreation, hospitality, community, location,
-map/destinations, gallery, films, construction updates, brochure state,
-buyer/investor enquiry, callback,
-consultation, WhatsApp state and broker enquiry.
+Mondrian: a natural continuous-scroll journey containing the brand film,
+Mondrian name, overview/key facts, residences, architecture/interiors,
+lifestyle/amenities, services/benefits, location, gallery, films, construction
+updates, brochure, buyer/broker enquiry and callback. Brochure and Enquire are
+prominent at the top of the project experience.
 Future project: reusable source template retained without a public link.
 
 News: one newest-first feed for releases, coverage, project updates, launches,
@@ -64,16 +63,15 @@ title and publication-date field. Filters, section navigation, separate press
 coverage and the page-level newsletter have been removed. The footer retains
 the newsletter and the page retains a discreet media enquiry link.
 
-Contact: office/map placeholder, WhatsApp state, all five enquiry types,
-project selection, personal details, preferred contact channel, callback/
-appointment preference, message, consent and confirmation/next steps.
-Shared footer: primary links, project brochure, newsletter, social placeholders,
-privacy, terms and cookies. Arabic controls are removed.
+Contact: short name, email, phone and optional interest fields, plus distinct
+buyer and broker pathways, callback and WhatsApp prototype states.
+Shared footer: concise Projects, Explore, Contact Us and News groups, contact
+details, social placeholders, newsletter and discreet legal links.
 
 INTERACTIONS
 Forms validate required fields and show prototype confirmation.
 Broker/media links preselect the correct enquiry type.
-Callback/consultation controls select the corresponding request.
+Request a Callback controls open a short callback dialog.
 Gallery previous/next controls cycle four image placeholders.
 Residence selector changes the sample floor-plan label and copy.
 Download, WhatsApp, social and source controls show clear states.
@@ -97,9 +95,10 @@ IMPLEMENTATION
 Every HTML file includes full static markup and can be read without JavaScript.
 Shared CSS provides responsive, grayscale styling.
 Shared JavaScript provides prototype interactions.
-The header uses a compact editorial menu for Our Story, Philosophy, Collection
-and News. Contact Us remains visible outside the menu. Our Story subpages retain
-dedicated URLs; the five philosophy pillars share one page with visible anchors.
+The slim header uses the ELEVATE emblem as an animated menu trigger for Our
+Story, Philosophy, Collection and News. Contact Us remains visible on the right.
+The full ELEVATE logo appears on arrival and again as the homepage sign-off.
+Our Story and the five philosophy pillars each use continuous page journeys.
 
 The 404 page is a linked preview; an HTTP host would need its own 404 routing.
 
@@ -121,6 +120,24 @@ Developments audit: listing includes portfolio introduction, current development
 
 Developments navigation: a dedicated dropdown links to three separate HTML pages: Developments Overview (developments.html), Mondrian project (mondrian.html), and Future Development template (future-development.html). Each page retains its own sections and URL. Future Development is also accessible from the shared footer and listing preview.
 
-Final Philosophy navigation: one page, no subpages and no dropdown. Order: editorial banner/introduction, five-pillar overview, Health, Wellness, Tribe, Purpose, Flow, how the philosophy informs developments, and explore-projects CTA. All pillar shortcuts point to sections of philosophy.html.
+Final Philosophy navigation: one page, no subpages and no dropdown. Order: editorial introduction, five-pillar overview, Health, Wellness, Tribe, Purpose, Flow and LIVE ELEVATED. All pillar shortcuts point to sections of philosophy.html.
 Global polish: compact typography, reduced section and banner spacing, balanced image heights, consistent cards/forms/buttons, compact footer and responsive tablet/mobile adjustments. All 20 pages checked at desktop/mobile sizes; links and existing interactions passed.
 Typography update: body copy, CTA links/buttons and form text set to 16px across desktop and mobile. About page navigation wraps on narrow screens to preserve readability.
+
+WIREFRAME SCOPE
+This version communicates information hierarchy, content order, responsive
+layout, spacing, image/film opportunities and key interactions. It is not a
+finished visual design. Typography, colour, photography, motion and detailed
+art direction will follow the approved ELEVATE design direction.
+
+COPY MANAGEMENT
+COPY-DECK.md is the shared working document for reviewing copy by page and
+section. It records headlines, body-copy requirements, calls to action, media
+requirements and approval status in one place.
+
+ZOHO ROUTING
+Production forms should send Interest, Page/Project, Source and Consent fields
+to Zoho. Buyer, broker, media, careers and callback submissions should use
+separate assignment rules and notifications. The production endpoint, field
+IDs, owners, duplicate handling and consent-retention policy remain to be
+confirmed with the CRM administrator before integration.
