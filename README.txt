@@ -95,9 +95,11 @@ IMPLEMENTATION
 Every HTML file includes full static markup and can be read without JavaScript.
 Shared CSS provides responsive, grayscale styling.
 Shared JavaScript provides prototype interactions.
-The slim header uses the ELEVATE emblem as an animated menu trigger for Our
-Story, Philosophy, Collection and News. Contact Us remains visible on the right.
-The full ELEVATE logo appears on arrival and again as the homepage sign-off.
+The slim header uses the full ELEVATE logo as a home link, with Our Story,
+Philosophy, Collection and News visible across the desktop navigation. Contact
+Us remains visible on the right. Mobile uses a simple non-animated Menu control.
+The duplicate page-arrival logo has been removed; the homepage keeps its brand
+sign-off before the footer.
 Our Story and the five philosophy pillars each use continuous page journeys.
 
 The 404 page is a linked preview; an HTTP host would need its own 404 routing.

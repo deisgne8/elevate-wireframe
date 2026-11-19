@@ -605,8 +605,13 @@ html{scroll-padding-top:62px}
 .header{position:sticky;top:0;z-index:40;background:#fbfaf7eF;backdrop-filter:blur(14px)}
 .header-inner{min-height:62px;padding-block:8px;display:flex;align-items:center}
 .header-contact{margin-left:auto;min-height:36px;padding:8px 14px;background:transparent;color:var(--ink);border:0;border-bottom:1px solid var(--ink)}
-.logo-menu{width:142px;min-width:142px!important;height:42px;min-height:42px;padding:7px 0!important;border:0!important;display:grid!important;place-items:center;background:transparent!important}
-.logo-menu img{display:block;width:142px;height:auto;object-fit:contain}
+.header-logo{display:block;width:142px;flex:0 0 142px;padding:7px 0}
+.header-logo img{display:block;width:100%;height:auto}
+.desktop-nav{display:flex;align-items:center;gap:clamp(18px,2.5vw,38px);margin-left:auto}
+.desktop-nav a{padding:10px 0;border-bottom:1px solid transparent;color:var(--ink);font-size:12px;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.desktop-nav a:hover,.desktop-nav a:focus-visible,.desktop-nav a[aria-current=page]{border-bottom-color:var(--ink)}
+.header-inner>.mobile-menu{display:none!important}
+.desktop-nav+.mobile-menu+.nav+.header-contact,.header-contact{margin-left:clamp(22px,3vw,46px)}
 .nav{top:100%;left:0;right:0;border-inline:0;padding:clamp(30px,5vw,62px)}
 .nav-utility{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
 .nav-utility a{font-size:12px;color:var(--muted);text-decoration:none}
@@ -692,6 +697,9 @@ blockquote{margin:36px 0 0;padding:26px 0;border-block:1px solid var(--line);fon
 @media(max-width:920px){
   html{scroll-padding-top:58px}
   .header-inner{min-height:58px;padding-block:6px}
+  .desktop-nav{display:none}
+  .header-inner>.mobile-menu{display:inline-flex!important;margin-left:auto;min-width:auto;min-height:34px;padding:7px 11px;background:transparent!important;color:var(--ink)!important;border:0!important;border-bottom:1px solid var(--ink)!important}
+  .header-contact{margin-left:12px}
   .hero-content.split,.closing-visual,.project-title,.project-introduction{grid-template-columns:1fr}
   .project-title .actions{grid-column:1}
   .mondrian-wordmark{padding-top:0}
@@ -706,8 +714,9 @@ blockquote{margin:36px 0 0;padding:26px 0;border-block:1px solid var(--line);fon
 
 @media(max-width:640px){
   .header-contact{min-height:34px;padding:7px 8px;font-size:10px}
-  .logo-menu{min-width:112px!important;width:112px;padding:8px 0!important}
-  .logo-menu img{width:112px;height:auto}
+  .header-logo{width:104px;flex-basis:104px;padding:8px 0}
+  .header-inner>.mobile-menu{font-size:10px;padding-inline:7px}
+  .header-contact{margin-left:7px}
   .arrival-logo{margin-bottom:44px}
   .nav{top:100%;left:calc(var(--page-gutter) * -1);right:calc(var(--page-gutter) * -1);padding:28px var(--page-gutter);max-height:calc(100vh - 58px);overflow:auto}
   .nav-utility{display:grid;grid-template-columns:1fr}
