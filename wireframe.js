@@ -34,6 +34,8 @@ field('full-name','Name *',input('full-name','text','Your name',true))+
 field('email','Email *',input('email','email','you@example.com',true))+
 field('phone','Phone *',input('phone','tel','Country code and phone number',true))+
 field('interest','Interest (optional)',select('interest',interestOptions(project)))+
+'<div class="field full contextual-field" id="enquiry-detail-field" '+(project?'':'hidden')+'><label for="enquiry-detail" id="enquiry-detail-label">'+(project?'Residence interest (optional)':'Additional detail (optional)')+'</label><input id="enquiry-detail" name="enquiry-detail" type="text" placeholder="'+(project?'Residence type or number of bedrooms':'Additional detail')+'"></div>'+
+field('message','Message *','<textarea id="message" name="message" placeholder="Tell us how we can help." required></textarea>',true)+
 '<div class="field full"><label class="check"><input type="checkbox" name="consent" required><span>I agree to be contacted about my enquiry and acknowledge the <a href="privacy.html">Privacy Policy</a>. *</span></label><button type="submit">Submit enquiry &#8594;</button></div></div><div class="form-result" role="status" tabindex="-1" hidden></div></form>';
 const callbackForm='<form class="form callback-form" data-kind="callback"><div class="eyebrow">Request a Callback</div><h3>Tell us how to reach you.</h3><div class="form-grid compact-form">'+field('callback-name','Name *',input('callback-name','text','Your name',true))+field('callback-email','Email *',input('callback-email','email','you@example.com',true))+field('callback-phone','Phone *',input('callback-phone','tel','Country code and phone number',true))+field('callback-interest','Interest (optional)',select('callback-interest',interestOptions()))+'<div class="field full"><label class="check"><input type="checkbox" required><span>I agree to be contacted about this request and acknowledge the <a href="privacy.html">Privacy Policy</a>.</span></label><button type="submit">Request callback &#8594;</button></div></div><div class="form-result" role="status" tabindex="-1" hidden></div></form>';
 const pages={};
@@ -213,7 +215,15 @@ if($('#residence-type'))$('#residence-type').onchange=e=>{const t=e.target.value
 let gallery=0;const galleryLabels=['Project exterior','Residence interiors','Wellbeing & recreation','Island setting'];
 function moveGallery(n){gallery=(gallery+n+4)%4;$('#gallery-image').innerHTML=ph('Gallery 0'+(gallery+1)+' / '+galleryLabels[gallery],'large');$('#gallery-count').textContent='0'+(gallery+1)+' / 04';}
 if($('#gallery-next')){$('#gallery-next').onclick=()=>moveGallery(1);$('#gallery-prev').onclick=()=>moveGallery(-1);}
-if(page==='contact'){const type=new URLSearchParams(location.search).get('type');const options={buyer:'Buyer / residence enquiry',broker:'Broker / channel partner',media:'Media enquiry',careers:'Careers'};if(options[type]&&$('#interest'))$('#interest').value=options[type];}
+const enquiryDetailOptions={
+'Buyer / residence enquiry':['Residence interest (optional)','Residence type or number of bedrooms'],
+'Broker / channel partner':['Company / agency (optional)','Your company or agency'],
+'Media enquiry':['Publication / organisation (optional)','Publication or organisation name'],
+'Careers':['Role of interest (optional)','Role, department or area of interest']
+};
+function updateEnquiryDetail(){if(!$('#interest')||!$('#enquiry-detail-field'))return;const detail=enquiryDetailOptions[$('#interest').value];$('#enquiry-detail-field').hidden=!detail;if(detail){$('#enquiry-detail-label').textContent=detail[0];$('#enquiry-detail').placeholder=detail[1];}}
+if($('#interest')){$('#interest').addEventListener('change',updateEnquiryDetail);updateEnquiryDetail();}
+if(page==='contact'){const type=new URLSearchParams(location.search).get('type');const options={buyer:'Buyer / residence enquiry',broker:'Broker / channel partner',media:'Media enquiry',careers:'Careers'};if(options[type]&&$('#interest')){$('#interest').value=options[type];updateEnquiryDetail();}}
 if(page==='future-development'){$('#project').innerHTML='<option>Future developments</option>';}
 function readStorage(key){try{return JSON.parse(localStorage.getItem(key)||'null');}catch{return null;}}
 function saveStorage(key,value){try{localStorage.setItem(key,JSON.stringify(value));return true;}catch{return false;}}
